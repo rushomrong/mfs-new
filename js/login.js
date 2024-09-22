@@ -9,7 +9,7 @@ document.getElementById("loginBtn").addEventListener("click", function (event) {
   console.log("email and password received");
 
   if (email === "admin@moneycare.com" && password === "1234") {
-    let url = "/home.html";
+    let url = "../home.html";
     url = url.substring(0, url.indexOf("."));
     window.location.href = url;
   } else {
