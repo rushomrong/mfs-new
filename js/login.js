@@ -9,8 +9,8 @@ document.getElementById("loginBtn").addEventListener("click", function (event) {
   console.log("email and password received");
 
   if (email === "admin@moneycare.com" && password === "1234") {
-    let url = "../home.html";
-    url = url.substring(0, url.indexOf("."));
+    let url = "/home.html";
+    url = url.substring(0, url.lastIndexOf("."));
     window.location.href = url;
   } else {
     window.alert("Error login details, please try again!");
