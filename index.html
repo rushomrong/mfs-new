@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoneyCare - Accounting</title>
+    <link rel="stylesheet" href="./style/style.main.css" />
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div
+        class="md:top-48 top-24 items-center card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+      >
+        <div class="flex justify-center py-4">
+          <img
+            src="./img/MoneyCare-logo.png"
+            alt=""
+            width="80px"
+            height="30px"
+          />
+        </div>
+        <form class="card-body">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input
+              id="userEmail"
+              type="email"
+              placeholder="email"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input
+              id="userPass"
+              type="password"
+              placeholder="password"
+              class="input input-bordered"
+              maxlength="4"
+              required
+            />
+            <div class="divider py-4">Login Details</div>
+            <div class="pt-4">
+              <label class="label">
+                <p class="text-15">
+                  Email: <strong>admin@moneycare.com</strong>
+                </p>
+                <p>Password: <strong>1234</strong></p>
+              </label>
+            </div>
+          </div>
+          <div id="loginBtn" class="form-control mt-6">
+            <button class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="./js/login.js"></script>
+  </body>
+</html>

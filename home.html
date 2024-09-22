@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoneyCare Home</title>
+    <link rel="stylesheet" href="./style/style.main.css" />
+  </head>
+  <body>
+    <main class="flex justify-center h-fit">
+      <div class="top-14 card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+       <div class="flex justify-center py-5">
+        <img src="./img/MoneyCare-logo.png" alt="" width="100px" height="100px">
+       </div>
+        <div class="stats w-full">
+          <div class="stat">
+            <div class="stat-title">Account balance</div>
+
+              <div id="acc-balance" class="stat-value">9400</div>
+
+            <div class="stat-actions">
+              <button id="add-funds" class="btn btn-sm btn-success">Add funds</button>
+              <button id="withdrawal-funds" class="btn btn-sm">Withdrawal</button>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-actions">
+              <button id="log-out" class="btn btn-sm">Logout</button>
+            </div>
+            </label>
+          </div>
+        </div>
+        <div>
+          <div class="divider"></div>
+
+          <div class="">
+            <div class="card-body">
+              
+              <h3 class="text-xl">Welcome to MoneyCare</h3>
+              <p class="mb-5">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+              <div class="grid grid-cols-4 gap-4 w-full top-5">
+                <!-- transfer btn -->
+                <button class="btn btn-lg px-15 text-sm">
+                  Transfer Money
+                </button>
+
+                <!-- get bonus btn -->
+                <button class="btn btn-lg px-15 text-sm">
+                  Get Bonus
+                </button>
+
+                <!-- pay bill btn -->
+                <button class="btn btn-lg px-15 text-sm">
+
+                  Pay Bills
+                </button>
+
+                <!-- tranasections btn  -->
+                <button class="btn btn-lg px-15 text-sm">
+                 
+                  Tranasactions
+                </button>
+              </div>
+            </div>
+          </div>
+
+            <div class="divider"></div>
+        <!-- add money form -->
+           <div id="addFunds-content" class="hidden">
+            <div class="flex justify-center py-8 h-auto">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body py-5">
+                      <label class="label">Add Money</label>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="input-amount" type="number" placeholder="Enter amount to add" class="input input-bordered" required />
+                    </div>
+  
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Account Number</span>
+                      </label>
+                      <input id="input-acc" type="number" maxlength="6" placeholder="Enter 6-digit ACC : 123456" class="input input-bordered" required />
+                    </div>
+                    
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input id="input-pass" type="password" placeholder="Enter 4-digit PIN: 1234" class="input input-bordered" maxlength="4" required />
+                    </div>
+  
+                    <div class="form-control mt-6">
+                      <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                    </div>
+                  </form>
+                </div>
+             </div>
+           </div>
+
+           <!-- add money form end here-->
+
+           <!-- Withdrawal money -->
+          <div id="withdrawal-content" class="hidden">
+            <div class="flex justify-center py-8 h-auto">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body py-5">
+                      <label class="label">Withdrawal Money</label>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="withdrawal-amount" type="number" placeholder="Enter amount to withdrawal" class="input input-bordered" required />
+                    </div>
+  
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Account Number</span>
+                      </label>
+                      <input id="withdrawal-acc" type="number" maxlength="6" placeholder="Enter 6-digit ACC : 123456" class="input input-bordered" required />
+                    </div>
+                    
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input id="withdrawal-pin" type="password" placeholder="Enter 4-digit PIN: 1234" class="input input-bordered" maxlength="4" required />
+                    </div>
+  
+                    <div class="form-control mt-6">
+                      <button id="withdrawal-btn" class="btn btn-primary">Withdrawal Money</button>
+                    </div>
+                  </form>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script -->
+     <script src="./js/addMoney.js"></script>
+     <script src="./js/withdrawal.js"></script>
+     <script src="./js/logout.js"></script>
+     <script src="./js/btnutilies.js"></script>
+  </body>
+</html>
