@@ -1667,7 +1667,7 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:top-48 {
-    top: 12rem;
+  .md\:top-8 {
+    top: 2rem;
   }
 }
